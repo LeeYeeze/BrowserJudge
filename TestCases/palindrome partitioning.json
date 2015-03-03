@@ -1,0 +1,47 @@
+[
+	{
+		"input":"a",
+		"output": [["a"]]
+	},
+	{
+		"input":"aa",
+		"output":[["a","a"],["aa"]]
+	},
+	{
+		"input":"ab",
+		"output":[["a","b"]]
+	},
+	{
+		"input": "aab",
+		"output": [["aa","b"],["a","a","b"]]
+	},
+	{
+		"input": "abb",
+		"output": [["a","bb"],["a","b","b"]]
+	},
+	{
+		"input": "abc",
+		"output": [["a","b","c"]]
+	},
+	{
+		"input": "aaa",
+		"output": [["a","a","a"],["a","aa"],["aa","a"],["aaa"]]
+	},
+	{
+		"input": "aaaa",
+		"output": [["a","a","a","a"],["a","a","aa"],["a","aa","a"],["a","aaa"],["aa","aa"],["aa","a","a"],["aaa","a"],["aaaa"]]
+	},
+	{
+		"input": "abcd",
+		"output": [["a","b","c","d"]]
+	},
+	{
+		"input": "aabb",
+		"output": [["a","a","b","b"],["a","a","bb"],["aa","bb"],["aa","b","b"]]
+	},
+    {
+        "input":"abba",
+        "output":[["a","b","b","a"],["a","bb","a"],["abba"]]
+    }
+	
+]

@@ -1,0 +1,98 @@
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="problem-title">
+                <h3 style="display: inline">{{problem}}</h3>
+                <a class="pull-right btn btn-default">Submission History</a>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="problem-content">
+                        <div ng-bind-html="renderHtml(insertHtml)"></div>
+                    </div>
+                </div>
+            </div>
+            <p class="action">
+                <a class="btn btn-success btn=pad" ng-href='/#/Discuss'>Discuss</a>
+            </p>
+            <hr>
+        </div>
+
+    </div>
+
+
+</div>
+
+
+<form class="container ng-scope ng-pristine ng-valid">
+    <div class="row">
+        <div class="col-md-12">
+        <div ui-ace="{mode:'javascript',onLoad: aceLoaded, useWrapMode: true, theme:'textmate'}" style="height:800px; margin-bottom:12px" class="ng-scope ng-pristine ng-valid ace_editor ace_tm" ng-model="aceInitial"></div>
+        <div class="action">
+            <input type="hidden" name="typed_code">
+            <button id="submitBtn" class="btn btn-primary btn-pad" type="submit" ng-click="codeSubmissionWithWebWorker3()" ng-disabled="flag">Submit</button>
+        </div>
+        </div>
+    </div>
+</form>
+
+<div class="container">
+    <div id="showResult" class="container" ng-show="!exhibit">
+
+        <div class="row">
+            <hr>
+            <div class="col-md-12">
+
+                <div class="row">
+                    <div class="col-md-8">
+                        <h4>
+                            Submission Result:
+                            <span id= "resultStatus" ng-class="{'blue': 'text-info', 'green': 'text-success', 'red':'text-danger'}[statusColor]">{{message}}</span>
+                        </h4>
+                        <div ng-show="statusText === 'Accepted'" class="animated fadeInLeft ng-hide"></div>
+                    </div>
+                </div>
+
+                <div id="lastExecuted" ng-show="showLastTestCase"></div>
+                <div id="result_code_output_row" ng-show="resultCodeOutput">
+                    <div class="alert alert-danger col-md-12">
+                        <table>
+                            <tr>
+                                <td>line {{lineNumber}}:</td>
+                                <td class="line-wrap" ng-bind="details"></td>
+                            </tr>
+                        </table>
+                    </div>
+
+                </div>
+                <div id="wrong_output" ng-show="showWrongTestCase">
+                    <div class="alert alert-danger col-md-12">
+                        <table>
+                            <tbody>
+                                <tr style="color:#333;">
+                                    <td class="">Input:</td>
+                                    <td class="line-wrap" style="font-weight: bold" ng-bind="lastInput"></td>
+                                </tr>
+                                <tr class="text-danger">
+                                    <td>Output:</td>
+                                    <td class="line-wrap" ng-bind="lastOutput"></td>
+                                </tr>
+                                <tr class="text-success">
+                                    <td>Expected:</td>
+                                    <td class="line-wrap" ng-bind="expected"></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+
+

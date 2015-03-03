@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/app.css">
+</head>
+<body ng-app = 'app' ng-controller='ApplicationCtrl'>
+<nav class='navbar navbar-default navbar-extra'>
+    <div class="container">
+        <div class="navbar-header">
+            <p class="navbar-brand">Javascript OJ</p>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav">
+                <li><a href="/#/">Posts</a></li>
+                <li><a href="/#/register">Sign up</a> </li>
+                <li><a href="/#/login">Login</a></li>
+                <li><a href="/#/problems">Problems</a></li>
+                <li><a href="/#/submissions">Submission</a></li>
+                <li><a href="/#/pickone">Pick one!</a></li>
+            </ul>
+            <p ng-if='currentUser' class="nav navbar-nav navbar-text navbar-right ng-cloak" ng-cloak>
+                Signed in as {{currentUser.data.username}}
+            </p>
+        </div>
+
+    </div>
+</nav>
+<div ng-view></div>
+<div class="container">
+    <hr>
+</div>
+<footer>
+    <p class="text-center">Javascript Online Judge</p>
+</footer>
+<script src="/bower_components/ace-builds/src-min-noconflict/ace.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-route.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular-sanitize.js"></script>
+<script src="/bower_components/angular-ui-ace/ui-ace.js"></script>
+<script src='/app3.js'></script>
+</body>
+</html>

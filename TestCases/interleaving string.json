@@ -1,0 +1,32 @@
+[
+  {
+    "input":{
+      "s1":"aabcc",
+      "s2":"dbbca",
+      "s3":"aadbbcbcac"
+    },
+    "output":true
+  },
+  {
+    "input":{
+      "s1":"aabcc",
+      "s2":"dbbca",
+      "s3":"aadbbaccc"
+    },
+    "output":false
+  },
+  {
+    "input":{
+      "s1":"a",
+      "s2":"b",
+      "s3":"c"
+    },
+    "output":false
+  },
+  {
+
+  },
+  {
+
+  }
+]

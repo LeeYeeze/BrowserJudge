@@ -1,0 +1,23 @@
+[
+  {
+    "input":{
+      "S":"ADOBECODEBANC",
+      "T":"ABC"
+    },
+    "output":"BANC"
+  },
+  {
+    "input":{
+      "S":"A",
+      "T":"B"
+    },
+    "output":""
+  },
+  {
+    "input":{
+      "S":"AAAAAA",
+      "T":"A"
+    },
+    "output":"A"
+  }
+]

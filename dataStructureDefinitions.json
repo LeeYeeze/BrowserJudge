@@ -1,0 +1,5 @@
+{
+    "ListNode": "/**\n * Definition for singly-linked list.\n * function ListNode(x) {\n *\t this.val = x;\n *\t this.next;\n * }\n */\n",
+    "Point": "/**\n * Definition for a point.\n * function Point(x,y) {\n *\t this.x = x;\n *\t this.y = y;\n * }\n */\n",
+    "TreeNode": "/**\n * Definition for binary tree.\n * function TreeNode(x) {\n *\t this.val = x;\n *\t this.left;\n *\t this.right;\n * }\n */\n"
+}

@@ -1,0 +1,34 @@
+<div ng-controller="ProblemCtrl" class="container"><div class="container"><div class="row"><div class="col-md-12"><div class="problem-title"><h3>{{problem}}</h3></div><div class="row"><div class="col-md-12"><div class="problem-content">
+              <p></p><p>
+Given a 2D board and a word, find if the word exists in the grid.
+</p>
+<p>
+The word can be constructed from letters of sequentially adjacent cell, where &quot;adjacent&quot; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
+</p>
+
+<p>
+For example,<br>
+Given <b>board</b> = 
+<pre>
+[
+  [&quot;ABCE&quot;],
+  [&quot;SFCS&quot;],
+  [&quot;ADEE&quot;]
+]
+</pre>
+
+<b>word</b> = <code>&quot;ABCCED&quot;</code>, -&gt; returns <code>true</code>,<br>
+<b>word</b> = <code>&quot;SEE&quot;</code>, -&gt; returns <code>true</code>,<br>
+<b>word</b> = <code>&quot;ABCB&quot;</code>, -&gt; returns <code>false</code>.<br>
+</p><p></p>
+              
+                <div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
+                <span class="hide">
+                  
+                  <a class="btn btn-xs btn-primary" href="/tag/array/">Array</a>
+                  
+                  <a class="btn btn-xs btn-primary" href="/tag/backtracking/">Backtracking</a>
+                  
+                </span>
+              
+            </div></div></div></div></div><p class="action"><a class="btn btn-success btn=pad" ng-href='/#/Discuss'>Discuss</a></p></div><form class="container ng-scope ng-pristine ng-valid"><div class="row"><div ui-ace="{mode:'javascript', onLoad: aceLoaded}" style="height:500px; margin-bottom:12px" class="ng-scope ng-pristine ng-valid ace_editor ace_tm" ng-model="aceInitial"></div><div class="action"><input type="hidden" name="typed_code"><button id="submitBtn" class="btn btn-primary btn-pad" type="submit" ng-click="codeSubmissionWithWebWorker2()" ng-disabled="flag">Submit</button></div></div></form></div>

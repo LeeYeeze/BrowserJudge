@@ -1,0 +1,62 @@
+[
+  {
+    "input": "",
+    "output":0
+  },
+  {
+    "input": "Hello World",
+    "output":5
+  },
+  {
+    "input": " ",
+    "output":0
+  },
+  {
+    "input":"       ",
+    "output":0
+  },
+  {
+    "input":"a",
+    "output":1
+  },
+  {
+    "input": " a",
+    "output":1
+  },
+  {
+    "input": "a ",
+    "output":1
+  },
+  {
+    "input": " a ",
+    "output":1
+  },
+  {
+    "input": "b a ",
+    "output":1
+  },
+  {
+    "input": "b   a    ",
+    "output":1
+  },
+  {
+    "input": "    day",
+    "output":3
+  },
+  {
+    "input": "    day ",
+    "output":3
+  },
+  {
+    "input": "day",
+    "output":3
+  },
+  {
+    "input":"day    ",
+    "output":3
+  },
+  {
+    "input": "Today is a nice day",
+    "output":3
+  }
+]

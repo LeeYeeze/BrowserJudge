@@ -1,0 +1,18 @@
+<div class="container">
+    <form ng-submit="register(username, password)" name="loginForm">
+        <div class="form-group" ng-class="{'has-error': (loginForm.username.$invalid && loginForm.username.$dirty) ||!availableFlag}">
+            <label>Username</label>
+            <input class="form-control" type = "text" ng-model="username" name="username" required ng-minlength="6" ng-change="availableFlag=true">
+            <span ng-show="loginForm.username.$error.required && loginForm.username.$dirty" class="help-block"> Username required</span>
+            <span ng-show="loginForm.username.$error.minlength && loginForm.username.$dirty" class="help-block"> Minimum length required is 6</span>
+            <span ng-show="!availableFlag" class="help-block">This account has been registered</span>
+        </div>
+        <div class="form-group" ng-class="{'has-error': loginForm.pwd.$invalid && loginForm.pwd.$dirty}">
+            <label>Password</label>
+            <input class="form-control" type="password" ng-model="password"  name="pwd" required ng-minlength="8">
+            <span ng-show="loginForm.pwd.$error.required && loginForm.pwd.$dirty" class="help-block">Password required</span>
+            <span ng-show="loginForm.pwd.$error.minlength && loginForm.pwd.$dirty" class="help-block">Minimum length required is 8</span>
+        </div>
+        <input class="btn btn-success btn-lg btn-block" type="submit" value="Register" ng-disabled="!loginForm.$valid">
+    </form>
+</div>

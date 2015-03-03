@@ -1,0 +1,22 @@
+[
+  {
+    "input":["a","aa","aaa","aaaa","aaaaa"],
+    "output":"a"
+  },
+  {
+    "input":["a","b","c","d","e","f","g","h","i","j","k"],
+    "output":""
+  },
+  {
+    "input":["common","compute","communicate","computer","commute","come"],
+    "output":"com"
+  },
+  {
+    "input":["none","nope","nobody","nonsense","nose"],
+    "output":"no"
+  },
+  {
+    "input":["air","ai","area","airbnb","add","alibaba","ant"],
+    "output":"a"
+  }
+]

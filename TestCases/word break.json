@@ -1,0 +1,58 @@
+[
+  {
+    "input":{
+      "s":"linkedIn",
+      "dict":{"linked":true,"In":true}
+    },
+    "output":true
+  },
+  {
+    "input":{
+      "s":"leetcode",
+      "dict":{"leet":true, "code":true}
+    },
+    "output":true
+  },
+  {
+    "input":{
+      "s":"by",
+      "dict":{"a":true}
+    },
+    "output":false
+  },
+  {
+    "input":{
+      "s":"aaaaaaaaa",
+      "dict":{"a":true}
+    },
+    "output":true
+  },
+  {
+    "input":{
+      "s":"forehead",
+      "dict":{"fore":true,"hand":true, "tip":true}
+    },
+    "output":false
+  },
+  {
+    "input":{
+      "s":"foundingFather",
+      "dict":{"founding":true,"Father":true,"found":true,"ing":true,"Father":true}
+    },
+    "output":true
+  },
+  {
+    "input":{
+      "s":"cplusplus",
+      "dict":{"c":true, "plus":true}
+    },
+    "output":true
+  },
+  {
+    "input":{
+      "s":"cplusplus",
+      "dict":{"c":true, "plu":true, "a":true}
+    },
+    "output":false
+  }
+]

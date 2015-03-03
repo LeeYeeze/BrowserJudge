@@ -1,0 +1,170 @@
+[
+  {
+    "input":"",
+    "output":true
+  },
+  {
+    "input":" ",
+    "output":true
+  },
+  {
+    "input":".",
+    "output":true
+  },
+  {
+    "input":"a",
+    "output":true
+  },
+  {
+    "input":"a.",
+    "output":true
+  },
+  {
+    "input":".a",
+    "output":true
+  },
+  {
+    "input":".,",
+    "output":true
+  },
+  {
+    "input":"aa",
+    "output":true
+  },
+  {
+    "input":"aA",
+    "output":true
+  },
+  {
+    "input":"!!!",
+    "output":true
+  },
+  {
+    "input":"a a",
+    "return":true
+  },
+  {
+    "input":"ab",
+    "output":false
+  },
+  {
+    "input":"a ba",
+    "output":true
+  },
+  {
+    "input":"aba",
+    "output":true
+  },
+  {
+    "input":"Bab",
+    "output":true
+  },
+  {
+    "input":"ab2a",
+    "output":false
+  },
+  {
+    "input":"1b1",
+    "output":true
+  },
+  {
+    "input": "race a car",
+    "output":false
+  },
+  {
+    "input":"abba",
+    "output":true
+  },
+  {
+    "input":"ab@a",
+    "output":true
+  },
+  {
+    "input":"c#dc",
+    "output":true
+  },
+  {
+    "input":"a.b,.",
+    "output":false
+  },
+  {
+    "input":"abb",
+    "output":false
+  },
+  {
+    "input":"1a2",
+    "output":false
+  },
+  {
+    "input":"......a.....",
+    "output":true
+  },
+  {
+    "input":",; W;:GlG:;l ;,",
+    "output":false
+  },
+  {
+    "input":"A man, a plan, a canal: Panama",
+    "output":true
+  },
+  {
+    "input":"race car",
+    "output":true
+  },
+  {
+    "input":"Sore was I ere I saw Eros.",
+    "output":true
+  },
+  {
+    "input":"A man, a plan, a canal -- Panama",
+    "output":true
+  },
+  {
+    "input":"8V8K;G;K;V;",
+    "output":false
+  },
+  {
+    "input":"!043XjqjX043!",
+    "output":false
+  },
+  {
+    "input": "Never a foot too far, even.",
+    "output":true
+  },
+  {
+    "input":"Euston saw I was not Sue.",
+    "output":true
+  },
+  {
+    "input":"Live on evasions? No, I save no evil.",
+    "output":true
+  },
+  {
+    "input":"Red Roses run no risk, sir, on nurses order.",
+    "output":true
+  },
+  {
+    "input":"Salisbury moor, sir, is roomy. Rub Silas.",
+    "output":true
+  },
+  {
+    "input":"Marge, let's \"went.\" I await news telegram.",
+    "output":true
+  },
+  {
+    "input:":"A new order began, a more Roman age bred Rowena.",
+    "output":true
+  },
+  {
+    "input":"I, man, am regal; a German am I.",
+    "output":true
+  },
+  {
+    "input":"Tracy, no panic in a pony-cart.",
+    "output":true
+  },
+  {
+    "input":"Egad! Loretta has Adams as mad as a hatter. Old age!",
+    "output":true
+  }
+]

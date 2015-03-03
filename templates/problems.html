@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 blog-main">
+            <div class="row" style="margin-bottom: 1em">
+                <form ng-submit="select()">
+                    <input id="searchText" type="text" placeholder="Search Problems" class="col-md-4 pull-right search-query" ng-model="searchKeywords" ng-trim="false">
+                </form>
+            </div>
+            <div class="row">
+                <table class="table table-striped table-centered" ng-show="searchFlag">
+                    <thead>
+                        <tr>
+                            <th>
+                            </th>
+                            <th>
+                                <a href="" ng-click="sortBy('name')">Title</a>
+                            </th>
+                            <th>
+                                <a href="" ng-click="sortBy('difficulty')">Difficulty</a>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="problem in selected | orderBy:predicate:reverse">
+                            <td><span></span></td>
+                            <td><a ng-href="/#/probs/{{problem.name}}">{{problem.name}}</a></td>
+                            <td>{{problem.difficulty}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <table class="table table-striped table-centered" ng-show="wholeTable">
+                    <thead>
+                    <tr>
+                        <th>
+                        </th>
+                        <th>
+                            <a href="" ng-click="sortBy('name')">Title</a>
+                        </th>
+                        <th>
+                            <a href="" ng-click="sortBy('difficulty')">Difficulty</a>
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                        <tr ng-repeat="problem in problems | orderBy:predicate:reverse" >
+                            <td><span></span></td>
+                            <td><a ng-href="/#/probs/{{problem.name}}">{{problem.name}}</a></td>
+                            <td>{{problem.difficulty}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+
+
+</div>

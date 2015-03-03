@@ -1,0 +1,23 @@
+<div ng-controller="ProblemCtrl" class="container"><div class="container"><div class="row"><div class="col-md-12"><div class="problem-title"><h3>{{problem}}</h3></div><div class="row"><div class="col-md-12"><div class="problem-content">
+              <p></p><p>Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order.</p>
+
+<p>You may assume no duplicates in the array.</p>
+
+<p>
+Here are few examples.<br>
+<code>[1,3,5,6]</code>, 5 &#x2192; 2<br>
+<code>[1,3,5,6]</code>, 2 &#x2192; 1<br>
+<code>[1,3,5,6]</code>, 7 &#x2192; 4<br>
+<code>[1,3,5,6]</code>, 0 &#x2192; 0
+</p><p></p>
+              
+                <div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
+                <span class="hide">
+                  
+                  <a class="btn btn-xs btn-primary" href="/tag/array/">Array</a>
+                  
+                  <a class="btn btn-xs btn-primary" href="/tag/binary-search/">Binary Search</a>
+                  
+                </span>
+              
+            </div></div></div></div></div><p class="action"><a class="btn btn-success btn=pad" ng-href='/#/Discuss'>Discuss</a></p></div><form class="container ng-scope ng-pristine ng-valid"><div class="row"><div ui-ace="{mode:'javascript'}" style="height:500px; margin-bottom:12px" class="ng-scope ng-pristine ng-valid ace_editor ace_tm" ng-model='aceInitial'></div><div class="action"><input type="hidden" name="typed_code"><button id="submitBtn" class="btn btn-primary btn-pad" type="submit" ng-click="codeSubmissionWithWebWorker()">Submit</button></div></div></form></div>

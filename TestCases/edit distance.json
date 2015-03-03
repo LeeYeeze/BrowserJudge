@@ -1,0 +1,97 @@
+[
+    {
+        "input": {
+            "word1":"a",
+            "word2":""
+        },
+        "output":1
+    },
+    {
+        "input": {
+            "word1":"ab",
+            "word2":""
+        },
+        "output":2
+    },
+    {
+        "input": {
+            "word1":"abc",
+            "word2":""
+        },
+        "output":3
+    },
+    {
+        "input": {
+            "word1":"abcd",
+            "word2":""
+        },
+        "output":4
+    },
+    {
+        "input": {
+            "word1":"a",
+            "word2":"b"
+        },
+        "output":1
+    },
+    {
+        "input": {
+            "word1":"a",
+            "word2":"ab"
+        },
+        "output":1
+    },
+    {
+        "input": {
+            "word1":"ab",
+            "word2":"a"
+        },
+        "output":1
+    },
+    {
+        "input": {
+            "word1":"ab",
+            "word2":"a"
+        },
+        "output":2
+    },
+    {
+        "input": {
+            "word1":"sea",
+            "word2":"ate"
+        },
+        "output":3
+    },
+    {
+        "input": {
+            "word1":"sea",
+            "word2":"eat"
+        },
+        "output":2
+    },
+    {
+        "input": {
+            "word1":"park",
+            "word2":"spake"
+        },
+        "output":3
+    },
+    {
+        "input": {
+            "word1":"food",
+            "word2":"money"
+        },
+        "output":4
+    },
+    {
+        "input": {
+            "word1":"food",
+            "word2":"money"
+        },
+        "output":4
+    }
+
+
+
+
+]

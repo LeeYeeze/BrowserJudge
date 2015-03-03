@@ -1,0 +1,35 @@
+[
+  {
+    "input":{
+      "start":"a",
+      "end":"c",
+      "dict":{"a":true, "b":true, "c":true}
+    },
+    "output":2
+  },
+  {
+    "input":{
+      "start":"hot",
+      "end":"dog",
+      "dict":{"hot":true,"dog":true}
+    },
+    "output":0
+  },
+  {
+    "input":{
+      "start":"hot",
+      "end":"dog",
+      "dict":{"hot":true,"dog":true,"dot":true}
+    },
+    "output":3
+  },
+  {
+    "input":{
+      "start":"hit",
+      "end":"cog",
+      "dict":{"hot":true, "dot":true, "dog":true, "lot":true, "log":true}
+    },
+    "output":5
+
+  }
+]

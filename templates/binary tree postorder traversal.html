@@ -1,0 +1,30 @@
+<div ng-controller="ProblemCtrl" class="container"><div class="container"><div class="row"><div class="col-md-12"><div class="problem-title"><h3>{{problem}}</h3></div><div class="row"><div class="col-md-12"><div class="problem-content">
+              <p></p><p>Given a binary tree, return the <i>postorder</i> traversal of its nodes&apos; values.</p>
+
+<p>
+For example:<br>
+Given binary tree <code>{1,#,2,3}</code>,<br>
+<pre>
+   1
+    \
+     2
+    /
+   3
+</pre>
+</p>
+<p>
+return <code>[3,2,1]</code>.
+</p>
+
+<p><b>Note:</b> Recursive solution is trivial, could you do it iteratively?</p><p></p>
+              
+                <div id="tags" class="btn btn-xs btn-warning">Show Tags</div>
+                <span class="hide">
+                  
+                  <a class="btn btn-xs btn-primary" href="/tag/tree/">Tree</a>
+                  
+                  <a class="btn btn-xs btn-primary" href="/tag/stack/">Stack</a>
+                  
+                </span>
+              
+            </div></div></div></div></div><p class="action"><a class="btn btn-success btn=pad" ng-href='/#/Discuss'>Discuss</a></p></div><form class="container ng-scope ng-pristine ng-valid"><div class="row"><div ui-ace="{mode:'javascript', onLoad: aceLoaded}" style="height:500px; margin-bottom:12px" class="ng-scope ng-pristine ng-valid ace_editor ace_tm" ng-model='aceInitial'></div><div class="action"><input type="hidden" name="typed_code"><button id="submitBtn" class="btn btn-primary btn-pad" type="submit" ng-click="codeSubmissionWithWebWorker()">Submit</button></div></div></form></div>
